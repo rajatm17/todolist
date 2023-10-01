@@ -6,20 +6,16 @@ This MERN stack TodoList application allows users to manage their tasks efficien
 2.1 Prerequisites
 Node.js installed on your system.
 MongoDB account and a database URL.
+
 2.2 Installation
 Client:
-
-bash
-Copy code
 cd client
 npm install
 Server:
-
-bash
-Copy code
 cd server
 npm install
-3. Folder Structure
+
+4. Folder Structure
 3.1 Client
 src: Contains React components and styles.
 public: Contains the HTML template and static assets.
@@ -28,15 +24,14 @@ index.js: Entry point of the server.
 routes: Contains API routes for authentication and todo operations.
 models: Contains MongoDB schema models.
 
-4. Configurations
+5. Configurations
 4.1 MongoDB Connection
 In the server/index.js file, update the mongodbURI variable with your MongoDB database URL.
 
 
-5. Authentication
+6. Authentication
 5.1 Signup
 Users can create an account by providing a unique username and password.
-
 JWT tokens are issued upon successful registration.
 5.2 Login
 Registered users can log in with their username and password.
@@ -55,17 +50,11 @@ Completed todos are visually differentiated from incomplete ones.
 
 8. Running the Application
 Client:
-
-bash
-Copy code
 cd client
 npm run start
 The client will run on http://localhost:3000.
 
 Server:
-
-bash
-Copy code
 cd server
 npm run nodemon
 The server will run on http://localhost:3001.
