@@ -68,7 +68,7 @@ This MERN (MongoDB, Express.js, React.js, Node.js) stack TodoList application al
 
         ```
         cd client
-        npm start
+        npm run start
         ```
 
         The client will run on `http://localhost:3000`.
@@ -77,10 +77,53 @@ This MERN (MongoDB, Express.js, React.js, Node.js) stack TodoList application al
 
         ```
         cd server
-        npm start
+        npm run nodemon
         ```
 
         The server will run on `http://localhost:3001`.
+
+
+      ## Authentication using JSON Web Tokens (JWT)
+
+In this MERN stack TodoList application, JSON Web Tokens (JWT) are employed for user authentication. Here's a simplified explanation of the authentication process:
+
+### Signup:
+
+1. **User Registration:**
+   - User signs up with a unique username and password.
+
+2. **Token Creation:**
+   - Upon successful registration, the server generates a JWT token.
+   - User data (e.g., username) is encoded into the token.
+
+3. **Token Sent to Client:**
+   - The server sends the JWT token back to the client.
+
+### Login:
+
+1. **User Login:**
+   - User provides credentials (username and password).
+
+2. **Token Verification:**
+   - Server verifies the received JWT token.
+   - If valid, the server extracts user data from the token.
+
+3. **User Verification:**
+   - Server validates the user using extracted data.
+   - If successful, the user is authenticated.
+
+### Benefits of JWT Authentication:
+
+- **Stateless**: JWTs are stateless, eliminating the need for server-side session storage.
+
+- **Security**: JWTs are cryptographically signed, ensuring data integrity and authenticity.
+
+- **Efficiency**: Compact and easily transmitted as HTTP headers or URL parameters.
+
+By leveraging JWTs, this TodoList application ensures secure and efficient user authentication.
+
+---
+
 
 
 
