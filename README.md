@@ -1,6 +1,8 @@
 # todolist
 ## MERN Stack TodoList App
 
+![](todolist.gif)
+
 ### Overview
 
 This MERN (MongoDB, Express.js, React.js, Node.js) stack TodoList application allows users to efficiently manage their tasks. Users can create an account, log in, create new todos, update them, and mark them as complete or incomplete. JSON Web Tokens (JWT) are utilized for authentication and authorization. The frontend is developed with Create React App and enhanced with Material-UI components.
